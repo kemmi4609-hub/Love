@@ -1,1 +1,97 @@
-# Love
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ถึงคนพิเศษ ❤️</title>
+
+<style>
+body{
+    margin:0;
+    font-family: "Prompt", sans-serif;
+    background:linear-gradient(135deg,#ffd6e7,#fff0f5);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.envelope{
+    width:320px;
+    height:220px;
+    background:#ff8fb1;
+    position:relative;
+    border-radius:10px;
+    cursor:pointer;
+    box-shadow:0 15px 30px rgba(0,0,0,.2);
+}
+
+.flap{
+    position:absolute;
+    width:0;
+    height:0;
+    border-left:160px solid transparent;
+    border-right:160px solid transparent;
+    border-top:110px solid #ff6b98;
+    transform-origin:top;
+    transition:.8s;
+    z-index:3;
+}
+
+.letter{
+    position:absolute;
+    width:280px;
+    height:180px;
+    background:white;
+    left:20px;
+    top:20px;
+    border-radius:10px;
+    padding:20px;
+    box-sizing:border-box;
+    text-align:center;
+    transition:.8s;
+    z-index:1;
+}
+
+.open .flap{
+    transform:rotateX(180deg);
+}
+
+.open .letter{
+    transform:translateY(-120px);
+}
+
+h2{
+    color:#ff4f88;
+}
+
+p{
+    color:#555;
+    line-height:1.6;
+}
+
+small{
+    color:#999;
+}
+</style>
+</head>
+
+<body>
+
+<div class="envelope" onclick="openLetter(this)">
+    <div class="flap"></div>
+
+    <div class="letter">
+        <h2>💌 ถึงคนพิเศษ 💌</h2>
+
+        <p>
+        ขอบคุณที่เข้ามาเป็นรอยยิ้มในทุกวันของเรา<br><br>
+
+        ไม่ว่าจะเจอเรื่องอะไร<br>
+        เราอยากอยู่ข้าง ๆ เธอเสมอ ❤️<br><br>
+
+        ขอให้รู้ไว้นะว่า...<br>
+        <b>เรารักเธอมากที่สุดเลย</b> 🥺💕
+        </p>
+
+        <small>กดซองอีกครั้งเพื่ออ่านใหม่</small
